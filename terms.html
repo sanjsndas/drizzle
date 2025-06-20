@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | DrizzleRoot - Micro-Irrigation Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #2C7BE5;
+            --secondary: #00D97E;
+            --accent: #00C9FF;
+            --dark: #12263F;
+            --light: #F5F9FC;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F9FBFD;
+            color: #364049;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+        
+        .water-drop {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .water-drop::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(44, 123, 229, 0.1) 0%, transparent 70%);
+            animation: ripple 8s infinite;
+            opacity: 0;
+            border-radius: 50%;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: scale(0.1);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(44, 123, 229, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(44, 123, 229, 0.4);
+        }
+        
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .footer-link:hover {
+            color: var(--secondary);
+        }
+        
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .terms-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .terms-point h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white">
+    <!-- Header -->
+    <header class="relative bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="water-drop w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <i class="fas fa-tint text-blue-500 text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+                        Drizzle<span class="font-normal">Root</span>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                   <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0"aria-current="page">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Terms of Service Hero -->
+    <section class="relative py-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Terms of Service</h2>
+            <p class="max-w-3xl mx-auto text-blue-100">
+                Last updated: June 15, 2023 | Effective date: June 15, 2023
+            </p>
+        </div>
+    </section>
+
+    <!-- Terms of Service Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 content-section">
+            <div class="mb-12">
+                <p class="text-gray-600 mb-6">
+                    Welcome to DrizzleRoot ("Company," "we," "our," "us"). These Terms of Service ("Terms," "Terms of Service") govern your use of our website located at <a href="https://www.drizzleroot.com" class="text-blue-500 hover:underline">www.drizzleroot.com</a> (the "Site") and our mobile applications, products, and services (collectively, the "Services").
+                </p>
+                <p class="text-gray-600">
+                    Please read these Terms of Service carefully before using our Services. By accessing or using any part of our Services, you agree to be bound by these Terms. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any Services.
+                </p>
+            </div>
+            
+            <!-- Terms Points -->
+            <div class="terms-content">
+                <!-- Point 1 -->
+                <div class="terms-point">
+                    <h3>1. Acceptance of Terms</h3>
+                    <p class="text-gray-600">
+                        By accessing or using our Services, you agree to be bound by these Terms and our Privacy Policy, which is incorporated herein by reference. If you do not agree with any part of these terms, you must not use our Services. We reserve the right to update, change, or replace any part of these Terms by posting updates and changes to our website. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website following the posting of any changes constitutes acceptance of those changes.
+                    </p>
+                </div>
+                
+                <!-- Point 2 -->
+                <div class="terms-point">
+                    <h3>2. Description of Services</h3>
+                    <p class="text-gray-600">
+                        DrizzleRoot provides micro-irrigation solutions and smart gardening technologies for residential and commercial customers. Our Services include but are not limited to: consultation services, system design, product sales, installation services, maintenance plans, mobile applications, and educational resources. We reserve the right to modify or discontinue, temporarily or permanently, the Services (or any part thereof) with or without notice at any time. We shall not be liable to you or any third-party for any modification, suspension, or discontinuance of the Services.
+                    </p>
+                </div>
+                
+                <!-- Point 3 -->
+                <div class="terms-point">
+                    <h3>3. Eligibility and Registration</h3>
+                    <p class="text-gray-600">
+                        To access certain features of our Services, you may be required to register for an account. When registering, you agree to provide accurate, current, and complete information about yourself as prompted by our registration form. You must be at least 18 years of age to use our Services. By using the Services, you represent and warrant that you meet this age requirement and have the legal capacity to enter into these Terms. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+                    </p>
+                </div>
+                
+                <!-- Point 4 -->
+                <div class="terms-point">
+                    <h3>4. Account Security</h3>
+                    <p class="text-gray-600">
+                        You are responsible for maintaining the security of your account and password. We cannot and will not be liable for any loss or damage from your failure to comply with this security obligation. You agree to immediately notify us of any unauthorized use of your account or any other breaches of security. We reserve the right to refuse service, terminate accounts, remove or edit content in our sole discretion. You may not use another user's account without express permission from that user and DrizzleRoot.
+                    </p>
+                </div>
+                
+                <!-- Point 5 -->
+                <div class="terms-point">
+                    <h3>5. User Conduct and Responsibilities</h3>
+                    <p class="text-gray-600">
+                        You agree not to use the Services to: (a) violate any laws or regulations; (b) infringe upon or violate our intellectual property rights or the intellectual property rights of others; (c) harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on any protected class; (d) submit false or misleading information; (e) upload or transmit viruses or any other type of malicious code; (f) collect or track personal information of others; (g) spam, phish, pharm, pretext, spider, crawl, or scrape; (h) interfere with or circumvent the security features of the Services.
+                    </p>
+                </div>
+                
+                <!-- Point 6 -->
+                <div class="terms-point">
+                    <h3>6. Intellectual Property</h3>
+                    <p class="text-gray-600">
+                        The Service and its original content, features, and functionality are and will remain the exclusive property of DrizzleRoot and its licensors. Our trademarks and trade dress may not be used in connection with any product or service without our prior written consent. All other trademarks referenced on our Services are the property of their respective owners. You acknowledge that DrizzleRoot retains all right, title and interest in and to the Services, including all intellectual property rights therein, whether registered or not, and wherever in the world those rights may exist.
+                    </p>
+                </div>
+                
+                <!-- Point 7 -->
+                <div class="terms-point">
+                    <h3>7. User-Generated Content</h3>
+                    <p class="text-gray-600">
+                        Our Services may allow you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material ("User Content"). You retain ownership of any intellectual property rights that you hold in that User Content. By posting User Content, you grant us a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, prepare derivative works of, display, and perform the User Content in connection with our Services. You represent and warrant that you own or have the necessary rights to the User Content you post.
+                    </p>
+                </div>
+                
+                <!-- Point 8 -->
+                <div class="terms-point">
+                    <h3>8. Prohibited Content</h3>
+                    <p class="text-gray-600">
+                        You agree not to upload, post, or otherwise make available through our Services any content that: (a) is illegal, fraudulent, or would constitute or encourage a criminal offense; (b) violates any third-party rights, including intellectual property rights or privacy rights; (c) contains viruses, malware, or other harmful components; (d) is false, misleading, or deceptive; (e) is defamatory, obscene, pornographic, vulgar, or offensive; (f) promotes discrimination, bigotry, racism, hatred, harassment, or harm against any individual or group; (g) contains private information of third parties without consent; (h) contains advertisements or solicitations of business.
+                    </p>
+                </div>
+                
+                <!-- Point 9 -->
+                <div class="terms-point">
+                    <h3>9. Third-Party Links and Services</h3>
+                    <p class="text-gray-600">
+                        Our Services may contain links to third-party websites or services that are not owned or controlled by DrizzleRoot. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that we shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods, or services available on or through any such websites or services. Your interactions with these third-parties are solely between you and the third-party.
+                    </p>
+                </div>
+                
+                <!-- Point 10 -->
+                <div class="terms-point">
+                    <h3>10. Purchases and Payments</h3>
+                    <p class="text-gray-600">
+                        When you make a purchase through our Services ("Transaction"), you agree to provide valid and current payment information. Prices for our products and services are subject to change without notice. We reserve the right to refuse or cancel any order at any time for reasons including but not limited to: product availability, errors in product or pricing information, or suspicion of fraudulent or illegal activity. You agree to pay all charges incurred by users of your account and credit/debit card at the prices in effect when such charges are incurred.
+                    </p>
+                </div>
+                
+                <!-- Point 11 -->
+                <div class="terms-point">
+                    <h3>11. Shipping and Delivery</h3>
+                    <p class="text-gray-600">
+                        We will make reasonable efforts to deliver products and materials in a timely manner. However, we cannot guarantee delivery dates and are not liable for delays caused by force majeure events or third-party shipping services. Risk of loss and title for products pass to you upon our delivery to the carrier. Some products may require signature upon delivery. You are responsible for providing accurate shipping information. Any customs duties, taxes, or other import fees are your responsibility. Shipping fees are non-refundable unless the return is due to our error.
+                    </p>
+                </div>
+                
+                <!-- Point 12 -->
+                <div class="terms-point">
+                    <h3>12. Returns and Refunds</h3>
+                    <p class="text-gray-600">
+                        We accept returns of most unused merchandise in original condition within 30 days of delivery for a refund of the purchase price, minus shipping costs. Certain products marked as non-returnable cannot be returned. To initiate a return, please contact our customer service team. Refunds will be processed within 14 business days of receiving the returned item. We reserve the right to refuse returns that don't meet our return policy. For services, if you're dissatisfied with our work, please contact us immediately so we can attempt to correct the situation before any refund may be considered.
+                    </p>
+                </div>
+                
+                <!-- Point 13 -->
+                <div class="terms-point">
+                    <h3>13. Installation Services</h3>
+                    <p class="text-gray-600">
+                        Our installation services are provided by trained professionals according to the specifications in your service agreement. Appointments may be rescheduled due to weather conditions, equipment availability, or technician illness. You are responsible for: (a) providing clear access to all work areas; (b) securing any necessary permits or approvals; (c) protecting or removing fragile items near work areas; (d) ensuring safe work conditions. We are not responsible for damage caused by hidden conditions (e.g., faulty wiring, plumbing issues) that were not apparent at time of estimate. Additional charges may apply if project scope changes.
+                    </p>
+                </div>
+                
+                <!-- Point 14 -->
+                <div class="terms-point">
+                    <h3>14. Service Warranties</h3>
+                    <p class="text-gray-600">
+                        We warrant our installation services against defects in workmanship for one year from completion date. This warranty covers the repair or replacement of improperly installed components. The warranty does not cover: (a) damage from accidents, misuse, or negligence; (b) normal wear and tear; (c) issues caused by modifications made by others; (d) damage from extreme weather or acts of nature; (e) components not supplied by us; (f) problems resulting from improper maintenance. To make a warranty claim, contact our service department with your original service documentation and photos of the issue. This warranty gives you specific legal rights, and you may also have other rights which vary by state.
+                    </p>
+                </div>
+                
+                <!-- Point 15 -->
+                <div class="terms-point">
+                    <h3>15. Product Warranties</h3>
+                    <p class="text-gray-600">
+                        Manufacturer warranties apply to products sold through our Services. Warranty periods and coverage vary by product and manufacturer. Please refer to individual product documentation for details. Some warranties require product registration. Our role is limited to facilitating communication between you and manufacturers regarding warranty claims. We may assist with warranty claims as a courtesy, but have no obligation to do so. We are not responsible for warranty fulfillment by manufacturers. Any implied warranties (merchantability, fitness for particular purpose) are limited in duration to the warranty period. Some states do not allow limitations on how long an implied warranty lasts.
+                    </p>
+                </div>
+                
+                <!-- Point 16 -->
+                <div class="terms-point">
+                    <h3>16. Limitation of Liability</h3>
+                    <p class="text-gray-600">
+                        In no event shall DrizzleRoot, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (a) your access to or use of or inability to access or use the Services; (b) any conduct or content of any third-party on the Services; (c) unauthorized access, use or alteration of your transmissions or content; (d) any products or services purchased or obtained through the Services; (e) errors or omissions in any content; or (f) any other matter relating to the Services. Our total liability for any claim arising under these Terms shall not exceed the amount you paid us in the twelve months preceding the claim.
+                    </p>
+                </div>
+                
+                <!-- Point 17 -->
+                <div class="terms-point">
+                    <h3>17. Indemnification</h3>
+                    <p class="text-gray-600">
+                        You agree to defend, indemnify and hold harmless DrizzleRoot and its affiliates, licensors, and service providers, from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses or fees (including reasonable attorneys' fees) arising out of or relating to: (a) your violation of these Terms; (b) your use of the Services, including but not limited to any use of our content, services, and products other than as expressly authorized in these Terms; (c) your violation of any third-party right, including without limitation any intellectual property right, publicity right, or privacy right; (d) any claim that your User Content caused damage to a third-party. We reserve the right to assume the exclusive defense and control of any matter subject to indemnification by you.
+                    </p>
+                </div>
+                
+                <!-- Point 18 -->
+                <div class="terms-point">
+                    <h3>18. Termination</h3>
+                    <p class="text-gray-600">
+                        We may terminate or suspend your account and bar access to the Services immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of these Terms. If you wish to terminate your account, you may simply discontinue using our Services. All provisions of these Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability. Upon termination, your right to use the Services will immediately cease.
+                    </p>
+                </div>
+                
+                <!-- Point 19 -->
+                <div class="terms-point">
+                    <h3>19. Governing Law and Jurisdiction</h3>
+                    <p class="text-gray-600">
+                        These Terms shall be governed and construed in accordance with the laws of the State of New York, United States, without regard to its conflict of law provisions. Any dispute arising out of or related to these Terms or our Services shall be brought exclusively in the state or federal courts located in New York County, New York, and you consent to the personal jurisdiction of these courts. The United Nations Convention on Contracts for the International Sale of Goods does not apply to these Terms. Notwithstanding the foregoing, we may seek injunctive or other equitable relief to protect our intellectual property rights in any court of competent jurisdiction.
+                    </p>
+                </div>
+                
+                <!-- Point 20 -->
+                <div class="terms-point">
+                    <h3>20. Changes to Terms</h3>
+                    <p class="text-gray-600">
+                        We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will provide notice of material changes by posting the updated Terms on our website and updating the "Last Updated" date at the top of this document. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our Services after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you must stop using our Services. We recommend that you review these Terms periodically for any changes.
+                    </p>
+                </div>
+                
+                <!-- Point 21 -->
+                <div class="terms-point">
+                    <h3>21. Disclaimer of Warranties</h3>
+                    <p class="text-gray-600">
+                        Your use of our Services is at your sole risk. The Services are provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance. We do not warrant that: (a) the Services will function uninterrupted, secure, or available at any particular time or location; (b) any errors or defects will be corrected; (c) the Services are free of viruses or other harmful components; (d) the results of using the Services will meet your requirements. Some jurisdictions do not allow the exclusion of certain warranties, so some of the above exclusions may not apply to you.
+                    </p>
+                </div>
+                
+                <!-- Point 22 -->
+                <div class="terms-point">
+                    <h3>22. Force Majeure</h3>
+                    <p class="text-gray-600">
+                        We shall not be liable for any failure to perform our obligations under these Terms where such failure results from any cause beyond our reasonable control, including, without limitation, mechanical, electronic or communications failure or degradation, acts of God, natural disasters, pandemics, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, strikes, labor disputes, or equipment failures, including network/infrastructure failures. If a force majeure event occurs affecting our performance, we will use reasonable efforts to notify you and will resume performance as soon as reasonably possible when the force majeure event ceases.
+                    </p>
+                </div>
+                
+                <!-- Point 23 -->
+                <div class="terms-point">
+                    <h3>23. Entire Agreement</h3>
+                    <p class="text-gray-600">
+                        These Terms, together with our Privacy Policy and any other legal notices published by us on our Services, shall constitute the entire agreement between you and DrizzleRoot concerning our Services and supersede all prior or contemporaneous agreements, communications and proposals, whether oral or written, between you and us (including, but not limited to, any prior versions of these Terms). Any failure by us to exercise or enforce any right or provision of these Terms shall not constitute a waiver of such right or provision unless acknowledged and agreed to by us in writing.
+                    </p>
+                </div>
+                
+                <!-- Point 24 -->
+                <div class="terms-point">
+                    <h3>24. Severability</h3>
+                    <p class="text-gray-600">
+                        If any provision of these Terms is found to be unenforceable or invalid under any applicable law, such unenforceability or invalidity shall not render these Terms unenforceable or invalid as a whole. Instead, such provision shall be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law, and the remaining provisions will continue in full force and effect. The parties agree that a court may reform any such provision to make it enforceable under applicable law while coming as close as possible to the parties' original intentions.
+                    </p>
+                </div>
+                
+                <!-- Point 25 -->
+                <div class="terms-point">
+                    <h3>25. Assignment</h3>
+                    <p class="text-gray-600">
+                        You may not assign, transfer, or sublicense these Terms, by operation of law or otherwise, without our prior written consent. Any attempt to do so without such consent will be null and void. We may assign our rights and obligations under these Terms without restriction and without notice to you. These Terms shall be binding upon and inure to the benefit of the parties hereto, their respective successors, heirs, and permitted assigns. In the event of any transfer or assignment of these Terms by us, your rights hereunder shall remain unaffected.
+                    </p>
+                </div>
+                
+                <!-- Point 26 -->
+                <div class="terms-point">
+                    <h3>26. Electronic Communications</h3>
+                    <p class="text-gray-600">
+                        When you use our Services or send emails to us, you are communicating with us electronically. You consent to receive communications from us electronically, such as emails, text messages, mobile push notices, or notices and messages through our Services. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing. You may opt out of marketing communications by following the unsubscribe instructions included in such communications.
+                    </p>
+                </div>
+                
+                <!-- Point 27 -->
+                <div class="terms-point">
+                    <h3>27. Mobile Applications</h3>
+                    <p class="text-gray-600">
+                        If you access the Services through our mobile applications, you acknowledge that these Terms apply to your use of such applications. Additional terms may apply when you use certain features of our applications, which will be presented to you at the time of use. You are responsible for any mobile carrier charges (including data charges) you incur by using our applications. We may update our applications automatically without notifying you. If your mobile device doesn't support such updates, certain features may become unavailable until you install the updated version.
+                    </p>
+                </div>
+                
+                <!-- Point 28 -->
+                <div class="terms-point">
+                    <h3>28. Beta Features</h3>
+                    <p class="text-gray-600">
+                        From time to time, we may offer access to features that are classified as "Beta" features. Such features are made available to you for evaluation purposes only. Beta features are provided "AS IS" with all faults, defects, and bugs, and may contain errors or inaccuracies that could cause failures, corruption, or loss of data. We may discontinue Beta features at any time in our sole discretion and may never make them generally available. We may charge for these features when we release a final version. You should back up all data before using any Beta features.
+                    </p>
+                </div>
+                
+                <!-- Point 29 -->
+                <div class="terms-point">
+                    <h3>29. Feedback and Suggestions</h3>
+                    <p class="text-gray-600">
+                        If you provide us with any feedback, comments, suggestions, or ideas regarding our Services ("Feedback"), you agree that we may use such Feedback without restriction or obligation to compensate you. We shall be free to use, disclose, reproduce, license, distribute, and exploit the Feedback provided to us as we see fit, entirely without obligation or restriction of any kind. You waive any rights or claims to such Feedback, including moral rights or similar rights in any jurisdiction. By providing Feedback, you represent that you own or otherwise control the rights to such Feedback.
+                    </p>
+                </div>
+                
+                <!-- Point 30 -->
+                <div class="terms-point">
+                    <h3>30. Third-Party Beneficiaries</h3>
+                    <p class="text-gray-600">
+                        Except as otherwise expressly provided in these Terms, there shall be no third-party beneficiaries to these Terms. Our licensors and service providers may enforce provisions of these Terms intended to benefit them, but otherwise, a person who is not a party to these Terms has no right under applicable laws to enforce any term of these Terms. No agency, partnership, joint venture, or employment is created as a result of these Terms and you do not have any authority to bind us in any respect whatsoever.
+                    </p>
+                </div>
+                
+                <!-- Point 31 -->
+                <div class="terms-point">
+                    <h3>31. Geographic Restrictions</h3>
+                    <p class="text-gray-600">
+                        We are based in the United States and provide our Services for use primarily by persons located in the United States. We make no claims that our Services or any content is accessible or appropriate outside of the United States. Access to our Services may not be legal by certain persons or in certain countries. If you access our Services from outside the United States, you do so on your own initiative and are responsible for compliance with local laws. We reserve the right to limit the availability of our Services to any person, geographic area, or jurisdiction at any time in our sole discretion.
+                    </p>
+                </div>
+                
+                <!-- Point 32 -->
+                <div class="terms-point">
+                    <h3>32. No Professional Advice</h3>
+                    <p class="text-gray-600">
+                        The information provided through our Services, including but not limited to horticultural advice, is for general informational purposes only and should not be construed as professional advice. We do not provide professional or specialist advice and the information we provide should not be relied upon as such. Before you make any decisions that could affect your plants or property, you should consider obtaining advice from qualified professionals who can evaluate your specific circumstances. Your use of our Services does not create a professional-client relationship between you and us.
+                    </p>
+                </div>
+                
+                <!-- Point 33 -->
+                <div class="terms-point">
+                    <h3>33. Promotional Offers</h3>
+                    <p class="text-gray-600">
+                        From time to time, we may offer special promotions, discounts, or other incentives ("Promotions"). Each Promotion may have additional terms and conditions that will apply to your participation in such Promotion, which will be presented to you at the time of the offer. Unless otherwise stated in the terms of a specific Promotion: (a) Promotions cannot be combined; (b) Promotions may not be transferred or assigned; (c) Promotions may not be redeemed for cash; (d) Promotions are void where prohibited; (e) we reserve the right to modify or cancel Promotions at any time; and (f) Promotions are subject to availability.
+                    </p>
+                </div>
+                
+                <!-- Point 34 -->
+                <div class="terms-point">
+                    <h3>34. User Responsibility for Property</h3>
+                    <p class="text-gray-600">
+                        When our technicians visit your property to provide services, you are responsible for: (a) securing pets and children away from work areas; (b) identifying underground utilities if any digging will occur; (c) obtaining all necessary approvals from property owners, homeowners associations, or local authorities; (d) ensuring work areas are safe and accessible; and (e) notifying us of any special property conditions (e.g., allergies, security systems). We are not responsible for damage to unmarked items (e.g., underground irrigation lines, invisible fences) if we were not properly notified about their existence and location.
+                    </p>
+                </div>
+                
+                <!-- Point 35 -->
+                <div class="terms-point">
+                    <h3>35. System Maintenance and Water Conservation</h3>
+                    <p class="text-gray-600">
+                        While our systems are designed to be water-efficient, actual water savings depend on proper system use and maintenance. You agree to: (a) follow all maintenance guidelines we provide; (b) monitor system performance and notify us promptly of any issues; (c) adjust scheduling seasonally as needed; (d) comply with all local water restrictions; and (e) ensure the system is properly winterized if you live in a cold climate. We are not responsible for excessive water usage resulting from failure to maintain the system, improper use, failure to follow our recommendations, or undetected leaks after installation.
+                    </p>
+                </div>
+                
+                <!-- Point 36 -->
+                <div class="terms-point">
+                    <h3>36. Smart Device Integration</h3>
+                    <p class="text-gray-600">
+                        Our smart irrigation controllers may integrate with third-party smart home platforms (e.g., Amazon Alexa, Google Home). Such integrations are provided "AS IS" and we do not guarantee continued compatibility with any particular platform. Platform providers may change their APIs or discontinue services without notice, which may affect functionality. You are responsible for maintaining compatible smart home devices and ensuring they meet minimum system requirements. Smart home integrations may require creation of accounts with third-party services and acceptance of their terms. We are not responsible for any issues caused by third-party services.
+                    </p>
+                </div>
+                
+                <!-- Point 37 -->
+                <div class="terms-point">
+                    <h3>37. Surveys and Research</h3>
+                    <p class="text-gray-600">
+                        We may invite you to participate in surveys, research studies, or product testing. Participation is always voluntary. Any personal information collected during such activities will be handled according to our Privacy Policy. By participating, you grant us permission to use your responses, feedback, and usage data for product improvement, marketing, and research purposes. We may compensate participants in our discretion with discounts, credits, or free products. Unless otherwise specified, survey responses are anonymous and aggregated. Product testing participants may be required to sign additional confidentiality agreements.
+                    </p>
+                </div>
+                
+                <!-- Point 38 -->
+                <div class="terms-point">
+                    <h3>38. Arbitration Agreement</h3>
+                    <p class="text-gray-600">
+                        Except for disputes involving intellectual property rights or injunctive relief, any dispute arising from these Terms or your use of our Services shall be resolved through binding arbitration under the Commercial Arbitration Rules of the American Arbitration Association, rather than in court. The arbitration shall take place in New York County, New York, in English. The arbitrator's award may be entered in any court of competent jurisdiction. Each party shall bear their own arbitration fees and costs. BY AGREEING TO THESE TERMS, YOU WAIVE YOUR RIGHT TO A JURY TRIAL OR TO PARTICIPATE IN A CLASS ACTION.
+                    </p>
+                </div>
+                
+                <!-- Point 39 -->
+                <div class="terms-point">
+                    <h3>39. Class Action Waiver</h3>
+                    <p class="text-gray-600">
+                        YOU AGREE THAT ANY ARBITRATION OR PROCEEDING SHALL BE LIMITED TO THE DISPUTE BETWEEN US AND YOU INDIVIDUALLY. YOU AGREE: (A) NO ARBITRATION OR PROCEEDING SHALL BE JOINED WITH ANY OTHER; (B) THERE IS NO RIGHT OR AUTHORITY FOR ANY DISPUTE TO BE ARBITRATED OR RESOLVED ON A CLASS-ACTION BASIS OR TO UTILIZE CLASS ACTION PROCEDURES; AND (C) THERE IS NO RIGHT OR AUTHORITY FOR ANY DISPUTE TO BE BROUGHT IN A PURPORTED REPRESENTATIVE CAPACITY ON BEHALF OF THE GENERAL PUBLIC OR ANY OTHER PERSONS. If this class action waiver is found to be invalid or unenforceable, then the entirety of the Arbitration Agreement will be null and void.
+                    </p>
+                </div>
+                
+                <!-- Point 40 -->
+                <div class="terms-point">
+                    <h3>40. Contact Information</h3>
+                    <p class="text-gray-600">
+                        If you have any questions about these Terms, please contact us at:
+                    </p>
+                    <p class="text-gray-600 mt-2">
+                        DrizzleRoot Inc.<br>
+                        Attn: Legal Department<br>
+                        690 E 14th St, New York, NY 10009<br>
+                        Email: legal@drizzleroot.com<br>
+                        Phone: (866) 711-2243
+                    </p>
+                    <p class="text-gray-600 mt-2">
+                        For customer service inquiries not related to these Terms, please use our standard contact channels as listed on our website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1 -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="water-drop w-10 h-10 rounded-full bg-blue-100 bg-opacity-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-tint text-blue-300 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">
+                            Drizzle<span class="font-normal">Root</span>
+                        </h3>
+                    </div>
+                    <p class="text-sm mb-4">
+                        Precision micro-irrigation solutions for urban gardeners since 2015.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">System Design</a></li>
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">Installation</a></li>
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">Maintenance</a></li>
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">Consultation</a></li>
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">Smart Technology</a></li>
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">Water Audits</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#tips" class="text-sm hover:text-white transition">Gardening Tips</a></li>
+                        <li><a href="index.html" class="text-sm hover:text-white transition">Blog</a></li>
+                        <li><a href="index.html" class="text-sm hover:text-white transition">FAQ</a></li>
+                        <li><a href="privacy.html" class="text-sm hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-sm hover:text-white transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">690 E 14th St, New York, NY 10009</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">(866) 711-2243</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">info@drizzleroot.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">Mon-Fri: 9am-6pm EST</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <p class="text-sm">
+                            © 2023 DrizzleRoot, Inc. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <ul class="flex flex-wrap justify-end space-x-4 text-sm">
+                            <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                            <li><a href="terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                            <li><a href="#" class="hover:text-white transition">Accessibility</a></li>
+                            <li><a href="index.html#sitemap" class="hover:text-white transition">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-sm">
+                    <p class="mb-2">
+                        <strong>Disclaimer:</strong> The information contained on this website is for general information purposes only. While we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                    </p>
+                    <p>
+                        In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

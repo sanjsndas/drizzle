@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrizzleRoot - Premium Micro-Irrigation & Urban Gardening Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #2C7BE5;
+            --secondary: #00D97E;
+            --accent: #00C9FF;
+            --dark: #12263F;
+            --light: #F5F9FC;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F9FBFD;
+            color: #364049;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+        
+        .water-drop {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .water-drop::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(44, 123, 229, 0.1) 0%, transparent 70%);
+            animation: ripple 8s infinite;
+            opacity: 0;
+            border-radius: 50%;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: scale(0.1);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(44, 123, 229, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(44, 123, 229, 0.4);
+        }
+        
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .footer-link:hover {
+            color: var(--secondary);
+        }
+        
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .text-content {
+            column-count: 2;
+            column-gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .text-content {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white">
+    <!-- Header -->
+    <header class="relative bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="water-drop w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <i class="fas fa-tint text-blue-500 text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+                        Drizzle<span class="font-normal">Root</span>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" tabindex="0"aria-current="page">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 bg-gradient-to-r from-blue-50 to-white overflow-hidden">
+        <div class="container mx-auto px-4 relative">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                        Every drop, 
+                        <span class="text-blue-600">perfectly placed.</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Revolutionizing urban gardening with precision micro-irrigation systems that conserve water while keeping your plants thriving. Our patented drip irrigation technology delivers water directly to plant roots with 90% efficiency, reducing water waste and promoting healthier growth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#services" class="btn-primary text-white py-3 px-6 rounded-full font-medium inline-block text-center">
+                            Explore Services
+                        </a>
+                        <a href="#contact" class="border-2 border-blue-500 text-blue-600 py-3 px-6 rounded-full font-medium inline-block text-center hover:bg-blue-50 transition">
+                            Free Consultation
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <img src="p1.png" 
+                         alt="Micro-irrigation system" 
+                         class="rounded-xl shadow-md w-full relative z-10 border-8 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4 content-section">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium">OUR COMPREHENSIVE SERVICES</span>
+                <h2 class="text-3xl font-bold text-gray-800 mt-2">
+                    Complete Micro-Irrigation 
+                    <span class="text-blue-500">Solutions</span>
+                </h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mt-4">
+                    We offer end-to-end micro-irrigation services designed specifically for urban environments, from initial consultation to ongoing maintenance.
+                </p>
+            </div>
+            
+            <!-- Primary Services -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="s1.jpg" 
+                         alt="System Design" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Custom System Design & Planning</h3>
+                    <div class="text-content">
+                        <p class="text-gray-600 mb-4">
+                            Our expert designers create fully customized irrigation plans tailored to your specific space and plant requirements. We conduct thorough site evaluations considering:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2">Sunlight exposure patterns throughout the day</li>
+                            <li class="mb-2">Microclimates within your space (wind tunnels, heat sinks, etc.)</li>
+                            <li class="mb-2">Soil composition and drainage characteristics</li>
+                            <li class="mb-2">Plant types and their specific water requirements</li>
+                            <li class="mb-2">Water pressure and source availability</li>
+                        </ul>
+                        <p class="text-gray-600 mb-4">
+                            Our design process includes 3D modeling to visualize the final installation, water flow calculations to ensure optimal coverage, and material specifications that match your aesthetic preferences. We'll provide multiple design options with detailed pros and cons for each approach.
+                        </p>
+                        <p class="text-gray-600">
+                            The final design package includes a comprehensive maintenance schedule, watering program recommendations for different seasons, and expansion plans for future garden additions.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                        <img src="s2.jpg" 
+                         alt="Installation" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Professional Installation Services</h3>
+                    <div class="text-content">
+                        <p class="text-gray-600 mb-4">
+                            Our certified installation team brings years of experience in urban irrigation solutions. We handle every aspect of the installation process with meticulous attention to detail:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2">Pre-installation site preparation and protection</li>
+                            <li class="mb-2">Precision tubing layout with minimal visible components</li>
+                            <li class="mb-2">Emitter placement optimized for root zone coverage</li>
+                            <li class="mb-2">Discreet routing of supply lines</li>
+                            <li class="mb-2">Pressure regulation and filtration installation</li>
+                            <li class="mb-2">Smart controller setup and programming</li>
+                        </ul>
+                        <p class="text-gray-600 mb-4">
+                            We use only commercial-grade components that withstand UV exposure and temperature fluctuations. All installations include leak testing, flow verification, and system balancing to ensure uniform water distribution. Our technicians will walk you through system operation and provide detailed documentation.
+                        </p>
+                        <p class="text-gray-600">
+                            Post-installation, we conduct a 30-day follow-up inspection to make any necessary adjustments as plants respond to the new irrigation regimen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Secondary Services -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="s3.jpg"  
+                         alt="Water Usage Analytics" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="font-bold text-gray-800 mb-3">Water Usage Analytics & Optimization</h4>
+                    <div class="text-content">
+                        <p class="text-gray-600 mb-4">
+                            Our advanced monitoring systems track every drop of water your garden uses, providing actionable insights through:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2">Real-time flow monitoring with leak detection</li>
+                            <li class="mb-2">Historical usage trends and comparisons</li>
+                            <li class="mb-2">Weather-based consumption analysis</li>
+                            <li class="mb-2">Plant-specific water requirement assessments</li>
+                        </ul>
+                        <p class="text-gray-600">
+                            We provide quarterly reports with conservation recommendations and can integrate with smart home systems for automated adjustments. Our clients typically see 30-50% reductions in outdoor water use within the first year.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="s4.jpg"  
+                         alt="Plant Health Monitoring" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="font-bold text-gray-800 mb-3">Plant Health Monitoring Systems</h4>
+                    <div class="text-content">
+                        <p class="text-gray-600 mb-4">
+                            Our sensor networks monitor key plant health indicators and adjust irrigation automatically:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2">Soil moisture at multiple root zone depths</li>
+                            <li class="mb-2">Leaf turgor pressure sensors</li>
+                            <li class="mb-2">Light intensity and duration tracking</li>
+                            <li class="mb-2">Nutrient level monitoring</li>
+                            <li class="mb-2">Disease risk alerts</li>
+                        </ul>
+                        <p class="text-gray-600">
+                            The system learns your plants' needs over time, creating customized watering profiles that prevent both under- and over-watering. You'll receive weekly health reports and proactive care recommendations.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                   <img src="s5.jpg" 
+                         alt="Seasonal Adjustments" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="font-bold text-gray-800 mb-3">Seasonal Maintenance & Adjustments</h4>
+                    <div class="text-content">
+                        <p class="text-gray-600 mb-4">
+                            We provide year-round support to keep your system performing optimally:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2">Spring activation and performance testing</li>
+                            <li class="mb-2">Summer peak usage optimization</li>
+                            <li class="mb-2">Fall preparation for temperature drops</li>
+                            <li class="mb-2">Winterization and freeze protection</li>
+                            <li class="mb-2">Component cleaning and replacement</li>
+                        </ul>
+                        <p class="text-gray-600">
+                            Our seasonal tune-ups include emitter cleaning, pressure checks, schedule adjustments for changing weather, and plant requirement updates as your garden matures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Services -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <img src="s6.jpeg" 
+                         alt="Smart Irrigation" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="font-bold text-gray-800 mb-3">Smart Irrigation Technology Integration</h4>
+                    <div class="text-content">
+                        <p class="text-gray-600 mb-4">
+                            Upgrade your system with our smart technology solutions:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2">Wi-Fi enabled controllers with mobile app control</li>
+                            <li class="mb-2">Weather station integration for predictive watering</li>
+                            <li class="mb-2">Voice control through Alexa/Google Assistant</li>
+                            <li class="mb-2">Automated zone prioritization during water restrictions</li>
+                            <li class="mb-2">Water budget management tools</li>
+                        </ul>
+                        <p class="text-gray-600">
+                            Our smart systems can reduce water usage by an additional 15-25% beyond standard efficiency gains while providing unparalleled convenience and control.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                   <img src="s7.jpg"  
+                         alt="Consulting" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="font-bold text-gray-800 mb-3">Urban Gardening Consultation Services</h4>
+                    <div class="text-content">
+                        <p class="text-gray-600 mb-4">
+                            Our horticulture experts provide comprehensive gardening advice:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2">Plant selection for microclimates</li>
+                            <li class="mb-2">Companion planting strategies</li>
+                            <li class="mb-2">Soil amendment recommendations</li>
+                            <li class="mb-2">Pest management solutions</li>
+                            <li class="mb-2">Seasonal planting guides</li>
+                            <li class="mb-2">Edible garden planning</li>
+                        </ul>
+                        <p class="text-gray-600">
+                            We offer both one-time consultations and ongoing garden coaching services to help you maximize your urban growing space.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 content-section">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10 relative">
+                    <img src="p1.png" 
+                         alt="Our Team" 
+                         class="rounded-xl shadow-md w-full relative z-10 border-8 border-white">
+                </div>
+                <div class="md:w-1/2">
+                    <span class="text-blue-500 font-medium">OUR STORY</span>
+                    <h2 class="text-3xl font-bold text-gray-800 mt-2 mb-6">
+                        Pioneering Precision Irrigation Since 
+                        <span class="text-blue-500">2015</span>
+                    </h2>
+                    <div class="text-content">
+                        <p class="text-gray-600 mb-4">
+                            DrizzleRoot was founded by Emma Johnson, a landscape architect frustrated by the lack of effective watering solutions for urban spaces. After designing rooftop gardens for high-end residential buildings in New York, she recognized that traditional irrigation methods wasted water and failed to meet plants' needs in constrained urban environments.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            What began as a small workshop in Brooklyn has grown into a team of 28 irrigation specialists, horticulturists, and engineers serving clients across the Northeast. We've installed over 1,200 systems in spaces ranging from tiny fire escapes to expansive rooftop farms.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            Our patented RootTarget™ drip technology was developed through years of research in partnership with Cornell University's Urban Horticulture Institute. This innovation allows precise water delivery adjusted for different plant types, soil conditions, and microclimates within a single system.
+                        </p>
+                        <h3 class="text-xl font-bold text-gray-800 mt-6 mb-3">Our Core Values</h3>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2"><strong>Water Stewardship:</strong> We believe every drop counts, especially in urban environments where water resources are strained.</li>
+                            <li class="mb-2"><strong>Plant-Centric Design:</strong> Our systems adapt to plants' needs rather than forcing plants to adapt to the system.</li>
+                            <li class="mb-2"><strong>Urban Adaptation:</strong> We specialize in solutions that work within the unique constraints of cities.</li>
+                            <li class="mb-2"><strong>Education:</strong> We empower clients with knowledge to become better gardeners.</li>
+                            <li class="mb-2"><strong>Sustainable Growth:</strong> We measure success by both business metrics and environmental impact.</li>
+                        </ul>
+                        <h3 class="text-xl font-bold text-gray-800 mt-6 mb-3">The DrizzleRoot Difference</h3>
+                        <p class="text-gray-600 mb-4">
+                            Unlike traditional irrigation companies that simply install equipment, we take a holistic approach to plant hydration:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2">Our systems are designed by horticulturists first, engineers second</li>
+                            <li class="mb-2">We use proprietary moisture modeling to predict plant needs</li>
+                            <li class="mb-2">All installations include ongoing performance monitoring</li>
+                            <li class="mb-2">We offer guaranteed water savings with all our systems</li>
+                            <li class="mb-2">Our team completes 200+ hours of continuing education annually</li>
+                        </ul>
+                        <p class="text-gray-600">
+                            We're proud to have been recognized by the Urban Green Council for our water conservation efforts and by the American Horticultural Society for our innovations in small-space gardening.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Section -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Meet Our Leadership Team</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800">Emma Johnson</h4>
+                                <p class="text-blue-500 text-sm">Founder & CEO</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">
+                            With 18 years in landscape architecture and urban planning, Emma brings unparalleled expertise in designing water-efficient urban green spaces. She holds patents on three irrigation innovations and teaches urban horticulture at NYU.
+                        </p>
+                    </div>
+                    
+                    <!-- Team Member 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="flex items-center mb-4">
+                           
+                            <div>
+                                <h4 class="font-bold text-gray-800">David Chen</h4>
+                                <p class="text-blue-500 text-sm">Director of Engineering</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">
+                            Former MIT researcher specializing in microfluidics, David leads our product development team. His work on precision emitters has revolutionized low-flow irrigation for container plants and vertical gardens.
+                        </p>
+                    </div>
+                    
+                    <!-- Team Member 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="flex items-center mb-4">
+                            
+                            <div>
+                                <h4 class="font-bold text-gray-800">Sarah Williams</h4>
+                                <p class="text-blue-500 text-sm">Head Horticulturist</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm">
+                            Sarah's PhD in Urban Agriculture from Cornell informs our plant health strategies. She's developed specialized watering regimens for over 300 plant varieties commonly grown in urban settings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4 content-section">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium">CLIENT SUCCESS STORIES</span>
+                <h2 class="text-3xl font-bold text-gray-800 mt-2">
+                    What Our Clients 
+                    <span class="text-blue-500">Say</span>
+                </h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mt-4">
+                    Don't just take our word for it - hear from urban gardeners who've transformed their spaces with our systems.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 mr-4">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Maria S.</h4>
+                            <p class="text-blue-500 text-sm">Brooklyn Rooftop Garden</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">
+                        "After struggling for years with hand-watering my 400 sq ft rooftop garden, the DrizzleRoot system has been life-changing. My water bill dropped 40% in the first month, and my plants are healthier than ever. The smart controller adjusts for weather automatically - no more coming home to wilted plants after a hot day."
+                    </p>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span class="text-sm text-gray-500">Verified client since 2019</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 mr-4">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">James R.</h4>
+                            <p class="text-blue-500 text-sm">Community Garden Coordinator</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">
+                        "We installed DrizzleRoot systems in all 28 plots of our community garden. The difference has been remarkable - consistent yields with half the water we used before. The residents love the mobile app controls, and I appreciate the detailed usage reports for grant applications. Their team provided excellent training for our garden members on system use and basic maintenance."
+                    </p>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span class="text-sm text-gray-500">Verified client since 2020</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 mr-4">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah L.</h4>
+                            <p class="text-blue-500 text-sm">Balcony Herb Garden</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">
+                        "As someone who travels frequently for work, I'd given up on keeping plants alive on my balcony. The DrizzleRoot system has not only kept my herbs thriving during two-week absences but actually increased my yields. The soil sensors caught a drainage issue I hadn't noticed, and their horticulturist recommended perfect adjustments. Worth every penny for the convenience and results."
+                    </p>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span class="text-sm text-gray-500">Verified client since 2021</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Studies -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Featured Case Studies</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Case Study 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h4 class="font-bold text-gray-800 mb-3">High-Rise Terrace Garden</h4>
+                        <p class="text-gray-600 mb-4">
+                            <strong>Challenge:</strong> A 1,200 sq ft terrace on the 38th floor with constant wind exposure and no water source access.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>Solution:</strong> Custom-designed wind-resistant emitters, hidden supply lines run through structural columns, and a slim-profile rainwater collection system.
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>Results:</strong> 55% water reduction compared to previous hand-watering, thriving plants despite 25mph winds, and seamless integration with the building's architecture.
+                        </p>
+                    </div>
+                    
+                    <!-- Case Study 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h4 class="font-bold text-gray-800 mb-3">Urban Farm Education Center</h4>
+                        <p class="text-gray-600 mb-4">
+                            <strong>Challenge:</strong> A teaching garden needing demonstration of various irrigation methods with limited water access.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>Solution:</strong> Six different micro-irrigation zones showcasing different technologies, all fed from a single rainwater harvesting system with digital flow monitoring.
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>Results:</strong> 70% less water used than conventional systems, perfect teaching tool showing real-time water savings, and ability to support 3x more planting beds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gardening Tips Section -->
+    <section id="tips" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 content-section">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium">EXPERT ADVICE</span>
+                <h2 class="text-3xl font-bold text-gray-800 mt-2">
+                    Urban Gardening 
+                    <span class="text-blue-500">Tips & Techniques</span>
+                </h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mt-4">
+                    Maximize your garden's potential with our research-backed growing advice.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Tip 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Optimizing Small Spaces</h3>
+                    <div class="text-content">
+                        <p class="text-gray-600 mb-4">
+                            Urban gardening requires creative use of limited space. Implement these strategies to maximize your growing area:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2"><strong>Vertical Gardening:</strong> Use trellises, wall planters, and hanging systems to grow upward. Vining plants like peas, beans, and cucumbers can produce heavily in minimal footprint.</li>
+                            <li class="mb-2"><strong>Succession Planting:</strong> Plan quick-growing crops (radishes, lettuce) to follow longer-season plants in the same space.</li>
+                            <li class="mb-2"><strong>Container Selection:</strong> Choose containers with depth appropriate for plant roots - at least 12" deep for tomatoes, 6-8" for herbs.</li>
+                            <li class="mb-2"><strong>Microclimate Awareness:</strong> Notice how sun and wind patterns change through the day and seasons. Position plants accordingly.</li>
+                        </ul>
+                        <p class="text-gray-600 mb-4">
+                            Our space assessment service can help identify every potential growing area in your unique space, including underutilized vertical surfaces and transitional zones.
+                        </p>
+                        <p class="text-gray-600">
+                            Remember that crowded plants compete for resources. Our precision irrigation systems deliver water exactly where each plant needs it, allowing for tighter spacing without sacrificing plant health.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Tip 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Water-Smart Gardening</h3>
+                    <div class="text-content">
+                        <p class="text-gray-600 mb-4">
+                            Proper watering is the most critical factor in urban garden success. Follow these guidelines:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2"><strong>Deep Watering:</strong> Encourage deep root growth by watering thoroughly but less frequently. Our systems are programmed to deliver the perfect amount.</li>
+                            <li class="mb-2"><strong>Morning Watering:</strong> Water before 10am to reduce evaporation loss and prevent fungal diseases from overnight moisture.</li>
+                            <li class="mb-2"><strong>Mulching:</strong> Use 2-3" of organic mulch to retain moisture and regulate soil temperature.</li>
+                            <li class="mb-2"><strong>Container Considerations:</strong> Potted plants need more frequent watering than in-ground plants. Our smart sensors adjust automatically.</li>
+                        </ul>
+                        <p class="text-gray-600 mb-4">
+                            Watch for these signs of watering issues:
+                        </p>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600">
+                            <li class="mb-2"><strong>Overwatering:</strong> Yellowing leaves, limp stems, mold growth</li>
+                            <li class="mb-2"><strong>Underwatering:</strong> Dry soil, wilted leaves, stunted growth</li>
+                            <li class="mb-2"><strong>Uneven Watering:</strong> Partial wilting, inconsistent growth patterns</li>
+                        </ul>
+                        <p class="text-gray-600">
+                            Our mobile app provides real-time alerts for these conditions, helping you address issues before they impact plant health.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Monthly Gardening Calendar -->
+            <div class="bg-white p-8 rounded-xl shadow-md mb-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Urban Gardening Monthly Calendar</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <!-- Spring -->
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3 text-center bg-green-50 py-2 rounded">Spring (March-May)</h4>
+                        <ul class="list-disc pl-5 text-gray-600 text-sm">
+                            <li class="mb-2">Start seeds indoors for warm season crops</li>
+                            <li class="mb-2">Prepare containers with fresh potting mix</li>
+                            <li class="mb-2">Install irrigation system before planting</li>
+                            <li class="mb-2">Harden off seedlings before transplanting</li>
+                            <li class="mb-2">Plant cool-weather crops directly</li>
+                            <li class="mb-2">Begin fertilizing as plants start active growth</li>
+                            <li class="mb-2">Monitor for early pests like aphids</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Summer -->
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3 text-center bg-yellow-50 py-2 rounded">Summer (June-August)</h4>
+                        <ul class="list-disc pl-5 text-gray-600 text-sm">
+                            <li class="mb-2">Harvest spring crops and replant quick growers</li>
+                            <li class="mb-2">Increase watering frequency as temperatures rise</li>
+                            <li class="mb-2">Provide shade for heat-sensitive plants</li>
+                            <li class="mb-2">Monitor container plants daily for water needs</li>
+                            <li class="mb-2">Prune for air circulation and pest control</li>
+                            <li class="mb-2">Fertilize every 2-3 weeks for heavy feeders</li>
+                            <li class="mb-2">Watch for powdery mildew and treat early</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Fall -->
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3 text-center bg-orange-50 py-2 rounded">Fall (September-November)</h4>
+                        <ul class="list-disc pl-5 text-gray-600 text-sm">
+                            <li class="mb-2">Plant cool-season crops for fall harvest</li>
+                            <li class="mb-2">Reduce watering as temperatures cool</li>
+                            <li class="mb-2">Harvest remaining warm-season crops</li>
+                            <li class="mb-2">Clean and store containers not in use</li>
+                            <li class="mb-2">Plant garlic and onions for overwintering</li>
+                            <li class="mb-2">Apply mulch to protect perennial roots</li>
+                            <li class="mb-2">Winterize irrigation system before freeze</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Winter -->
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-3 text-center bg-blue-50 py-2 rounded">Winter (December-February)</h4>
+                        <ul class="list-disc pl-5 text-gray-600 text-sm">
+                            <li class="mb-2">Plan next season's garden layout</li>
+                            <li class="mb-2">Order seeds and supplies early</li>
+                            <li class="mb-2">Start seeds indoors with grow lights</li>
+                            <li class="mb-2">Protect cold-hardy plants with covers</li>
+                            <li class="mb-2">Maintain indoor herb gardens</li>
+                            <li class="mb-2">Clean and sharpen tools</li>
+                            <li class="mb-2">Attend gardening workshops</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plant-Specific Guides -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Guide 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-gray-800 mb-3">Tomatoes in Containers</h4>
+                    <p class="text-gray-600 text-sm mb-2">
+                        <strong>Container Size:</strong> Minimum 5 gallons, larger preferred
+                    </p>
+                    <p class="text-gray-600 text-sm mb-2">
+                        <strong>Water Needs:</strong> Consistent moisture, avoid wetting leaves
+                    </p>
+                    <p class="text-gray-600 text-sm mb-2">
+                        <strong>Special Considerations:</strong> Requires staking or cages, heavy feeder
+                    </p>
+                    <p class="text-gray-600 text-sm">
+                        Our drip systems prevent blossom end rot by maintaining even soil moisture.
+                    </p>
+                </div>
+                
+                <!-- Guide 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-gray-800 mb-3">Leafy Greens</h4>
+                    <p class="text-gray-600 text-sm mb-2">
+                        <strong>Container Size:</strong> 6-8" depth, can be closely spaced
+                    </p>
+                    <p class="text-gray-600 text-sm mb-2">
+                        <strong>Water Needs:</strong> Keep consistently moist, wilts easily
+                    </p>
+                    <p class="text-gray-600 text-sm mb-2">
+                        <strong>Special Considerations:</strong> Benefits from afternoon shade in summer
+                    </p>
+                    <p class="text-gray-600 text-sm">
+                        Our misting nozzles provide perfect humidity for tender greens.
+                    </p>
+                </div>
+                
+                <!-- Guide 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-gray-800 mb-3">Herbs</h4>
+                    <p class="text-gray-600 text-sm mb-2">
+                        <strong>Container Size:</strong> Varies by type, most do well in 6-10" pots
+                    </p>
+                    <p class="text-gray-600 text-sm mb-2">
+                        <strong>Water Needs:</strong> Mediterranean herbs prefer drier conditions
+                    </p>
+                    <p class="text-gray-600 text-sm mb-2">
+                        <strong>Special Considerations:</strong> Pinch back regularly to prevent bolting
+                    </p>
+                    <p class="text-gray-600 text-sm">
+                        Our zone programming allows different watering for various herb types.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4 content-section">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium">GET IN TOUCH</span>
+                <h2 class="text-3xl font-bold text-gray-800 mt-2">
+                    Contact DrizzleRoot
+                </h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mt-4">
+                    Ready to transform your urban garden? Have questions about our services? Reach out to our team.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="grid grid-cols-1 gap-4 mb-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone (optional)</label>
+                                <input type="tel" id="phone" name="phone" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Interest</label>
+                                <select id="service" name="service" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="">Select a service</option>
+                                    <option value="design">System Design</option>
+                                    <option value="installation">Installation</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="maintenance">Maintenance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary text-white py-3 px-6 rounded-full font-medium inline-block">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm mb-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Visit Our Showroom</h3>
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-blue-500">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-800 font-medium">690 E 14th St, New York, NY 10009</p>
+                                <p class="text-gray-600 text-sm">Between Avenue C and D in the East Village</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-blue-500">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-800 font-medium">Hours</p>
+                                <p class="text-gray-600 text-sm">Monday-Friday: 9am-6pm</p>
+                                <p class="text-gray-600 text-sm">Saturday: 10am-4pm</p>
+                                <p class="text-gray-600 text-sm">Sunday: Closed</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-blue-500">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-800 font-medium">(212) 555-0187</p>
+                                <p class="text-gray-600 text-sm">Available during business hours</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-blue-500">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-800 font-medium">info@drizzleroot.com</p>
+                                <p class="text-gray-600 text-sm">Typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Schedule a Consultation</h3>
+                        <p class="text-gray-600 mb-4">
+                            Book a free 30-minute consultation with our experts to discuss your project:
+                        </p>
+                        <ul class="list-disc pl-5 mb-6 text-gray-600">
+                            <li class="mb-2">On-site or virtual options available</li>
+                            <li class="mb-2">No-obligation assessment</li>
+                            <li class="mb-2">Personalized recommendations</li>
+                            <li class="mb-2">Rough cost estimates</li>
+                        </ul>
+                        <a href="#" class="btn-primary text-white py-3 px-6 rounded-full font-medium inline-block">
+                            Book Online Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 content-section">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium">HAVE QUESTIONS?</span>
+                <h2 class="text-3xl font-bold text-gray-800 mt-2">
+                    Frequently Asked 
+                    <span class="text-blue-500">Questions</span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Column 1 -->
+                <div>
+                    <!-- Question 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3">How much water can I expect to save with a DrizzleRoot system?</h4>
+                        <p class="text-gray-600">
+                            Most of our clients see 40-70% reductions in outdoor water use compared to traditional watering methods. The exact savings depend on your current practices, plant types, and local climate. Our most efficient systems for vegetable gardens average 60% savings, while ornamental plantings typically save 45-50%. We provide detailed water use projections with every design proposal.
+                        </p>
+                    </div>
+                    
+                    <!-- Question 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3">What's the maintenance requirement for these systems?</h4>
+                        <p class="text-gray-600">
+                            Our systems require minimal maintenance when properly installed. Basic care includes:
+                        </p>
+                        <ul class="list-disc pl-5 mt-2 mb-2 text-gray-600">
+                            <li class="mb-1">Monthly visual inspection of emitters</li>
+                            <li class="mb-1">Seasonal controller reprogramming</li>
+                            <li class="mb-1">Annual filter cleaning/replacement</li>
+                            <li class="mb-1">Winterization in cold climates</li>
+                        </ul>
+                        <p class="text-gray-600">
+                            We offer maintenance plans that handle all these tasks for you, with most clients opting for our twice-yearly service visits.
+                        </p>
+                    </div>
+                    
+                    <!-- Question 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">Can the system handle different plants with varying water needs?</h4>
+                        <p class="text-gray-600">
+                            Absolutely. Our zoning technology allows precise water delivery tailored to each plant's requirements within the same system. We can create:
+                        </p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-600">
+                            <li class="mb-1">Separate zones with different schedules</li>
+                            <li class="mb-1">Variable flow emitters within a single zone</li>
+                            <li class="mb-1">Automated adjustments based on sensor data</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <!-- Question 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3">How does the installation process work?</h4>
+                        <p class="text-gray-600">
+                            Our streamlined installation process typically follows these steps:
+                        </p>
+                        <ol class="list-decimal pl-5 mt-2 mb-2 text-gray-600">
+                            <li class="mb-1">Initial consultation and site assessment</li>
+                            <li class="mb-1">Custom system design and proposal</li>
+                            <li class="mb-1">Scheduling at your convenience</li>
+                            <li class="mb-1">Professional installation (usually 1-3 days)</li>
+                            <li class="mb-1">System testing and client training</li>
+                            <li class="mb-1">30-day follow-up inspection</li>
+                        </ol>
+                        <p class="text-gray-600">
+                            Most residential installations are completed within 2 weeks from initial contact to final inspection.
+                        </p>
+                    </div>
+                    
+                    <!-- Question 5 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3">What if I want to change my plantings later?</h4>
+                        <p class="text-gray-600">
+                            Our systems are designed for flexibility and easy modification. We offer:
+                        </p>
+                        <ul class="list-disc pl-5 mt-2 mb-2 text-gray-600">
+                            <li class="mb-1">Modular components that can be rearranged</li>
+                            <li class="mb-1">Expandable systems that grow with your garden</li>
+                            <li class="mb-1">Adjustable emitters that can be moved or replaced</li>
+                        </ul>
+                        <p class="text-gray-600">
+                            Many clients take advantage of our free seasonal adjustment service to reconfigure their systems as their gardens evolve.
+                        </p>
+                    </div>
+                    
+                    <!-- Question 6 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">Do you offer financing options?</h4>
+                        <p class="text-gray-600">
+                            Yes, we partner with several lenders to offer flexible financing solutions:
+                        </p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-600">
+                            <li class="mb-1">0% interest plans for 6-18 months</li>
+                            <li class="mb-1">Low monthly payment options</li>
+                            <li class="mb-1">Energy/water efficiency rebate assistance</li>
+                        </ul>
+                        <p class="text-gray-600 mt-2">
+                            Many clients find that their water savings offset a significant portion of the monthly payments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction Guarantee -->
+    <section class="py-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">
+                Our Customer Satisfaction 
+                <span class="text-blue-200">Guarantee</span>
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="mb-8 text-blue-100">
+                    We stand behind our work with the most comprehensive guarantee in the industry:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Performance Guarantee</h3>
+                        <p class="text-blue-100">
+                            We guarantee at least 40% water savings or we'll modify your system at no cost until the target is met.
+                        </p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Plant Health Guarantee</h3>
+                        <p class="text-blue-100">
+                            If your properly maintained plants suffer from irrigation-related issues in the first year, we'll replace them.
+                        </p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Satisfaction Guarantee</h3>
+                        <p class="text-blue-100">
+                            Not completely satisfied? We'll work with you until you are, with no additional charges.
+                        </p>
+                    </div>
+                </div>
+                <p class="text-blue-100 mb-8">
+                    *See complete guarantee terms in your contract. Certain restrictions apply.
+                </p>
+                <a href="#contact" class="bg-white text-blue-600 py-3 px-8 rounded-full font-medium inline-block hover:bg-gray-100 transition">
+                    Claim Your Guarantee
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1 -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="water-drop w-10 h-10 rounded-full bg-blue-100 bg-opacity-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-tint text-blue-300 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">
+                            Drizzle<span class="font-normal">Root</span>
+                        </h3>
+                    </div>
+                    <p class="text-sm mb-4">
+                        Precision micro-irrigation solutions for urban gardeners since 2015.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-white transition">System Design</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Installation</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Maintenance</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Consultation</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Smart Technology</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Water Audits</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-white transition">Gardening Blog</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Water Savings Calculator</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Plant Guides</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">DIY Tips</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Video Tutorials</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Our Team</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Testimonials</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <p class="text-sm">
+                            © 2023 DrizzleRoot, Inc. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <ul class="flex flex-wrap justify-end space-x-4 text-sm">
+                            <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                            <li><a href="#" class="hover:text-white transition">Accessibility</a></li>
+                            <li><a href="#" class="hover:text-white transition">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-sm">
+                    <p class="mb-2">
+                        <strong>Disclaimer:</strong> The information contained on this website is for general information purposes only. While we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                    </p>
+                    <p>
+                        In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DrizzleRoot - Micro-Irrigation Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #2C7BE5;
+            --secondary: #00D97E;
+            --accent: #00C9FF;
+            --dark: #12263F;
+            --light: #F5F9FC;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F9FBFD;
+            color: #364049;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+        
+        .water-drop {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .water-drop::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(44, 123, 229, 0.1) 0%, transparent 70%);
+            animation: ripple 8s infinite;
+            opacity: 0;
+            border-radius: 50%;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: scale(0.1);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(44, 123, 229, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(44, 123, 229, 0.4);
+        }
+        
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .footer-link:hover {
+            color: var(--secondary);
+        }
+        
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .contact-point h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        
+        .contact-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white">
+    <!-- Header -->
+    <header class="relative bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="water-drop w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <i class="fas fa-tint text-blue-500 text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+                        Drizzle<span class="font-normal">Root</span>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0"aria-current="page">Contact us</a>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="relative py-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Contact DrizzleRoot</h2>
+            <p class="max-w-3xl mx-auto text-blue-100">
+                Get in touch with our irrigation experts for consultations, support, or general inquiries
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 content-section">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <!-- Contact Form -->
+                <div class="contact-card">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <select id="subject" name="subject" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Select a subject</option>
+                                <option value="consultation">Consultation Request</option>
+                                <option value="installation">Installation Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="quote">Quote Request</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <div class="pt-2">
+                            <button type="submit" class="btn-primary text-white py-3 px-6 rounded-full font-medium inline-block w-full">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div class="contact-card">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1 mr-4 text-blue-500">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Headquarters</h4>
+                                    <p class="text-gray-600">690 E 14th St, New York, NY 10009</p>
+                                    <p class="text-gray-500 text-sm mt-1">Between Avenue C and D in the East Village</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1 mr-4 text-blue-500">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Phone</h4>
+                                    <p class="text-gray-600">(866) 711-2243</p>
+                                    <p class="text-gray-500 text-sm mt-1">Available Mon-Fri, 9am-6pm EST</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1 mr-4 text-blue-500">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Email</h4>
+                                    <p class="text-gray-600">info@drizzleroot.com</p>
+                                    <p class="text-gray-500 text-sm mt-1">Typically respond within 24 hours</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1 mr-4 text-blue-500">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Business Hours</h4>
+                                    <p class="text-gray-600">Monday-Friday: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
+                                    <p class="text-gray-600">Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Emergency Support</h3>
+                        <div class="space-y-4">
+                            <p class="text-gray-600">
+                                For urgent irrigation system issues outside business hours that require immediate attention (leaks, malfunctions causing water waste, etc.), call our emergency line:
+                            </p>
+                            <div class="bg-red-50 border-l-4 border-red-500 p-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-exclamation-triangle text-red-500 mr-3"></i>
+                                    <div>
+                                        <p class="font-bold text-red-700">Emergency Line</p>
+                                        <p class="text-gray-800">(212) 555-0190</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm">
+                                Note: Emergency callouts may incur additional charges. Non-emergency inquiries will be redirected to our regular support channels during business hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Contact Points -->
+            <div class="contact-content">
+                <!-- Point 1 -->
+                <div class="contact-point">
+                    <h3>1. General Inquiries</h3>
+                    <p class="text-gray-600">
+                        For general questions about our products and services, please reach out via our contact form or email us directly. We aim to respond to all inquiries within 24 hours. Your feedback is important to us, and we appreciate your interest in DrizzleRoot.
+                    </p>
+                </div>
+                
+                <!-- Point 2 -->
+                <div class="contact-point">
+                    <h3>2. Consultation Requests</h3>
+                    <p class="text-gray-600">
+                        If you are interested in scheduling a consultation for your irrigation needs, please fill out the contact form with your preferred dates and times. Our team will get back to you to confirm your appointment and discuss your specific requirements.
+                    </p>
+                </div>
+                
+                <!-- Point 3 -->
+                <div class="contact-point">
+                    <h3>3. Installation Inquiries</h3>
+                    <p class="text-gray-600">
+                        For inquiries related to installation services, please provide details about your project in the contact form. This includes the type of system you are interested in and any specific challenges you may be facing. Our installation team will review your request and reach out to discuss further.
+                    </p>
+                </div>
+                
+                <!-- Point 4 -->
+                <div class="contact-point">
+                    <h3>4. Technical Support</h3>
+                    <p class="text-gray-600">
+                        If you are experiencing issues with your irrigation system, please contact our technical support team. You can reach them via email or by calling our support line during business hours. Be prepared to provide your system details and a description of the issue for faster assistance.
+                    </p>
+                </div>
+                
+                <!-- Point 5 -->
+                <div class="contact-point">
+                    <h3>5. Feedback and Suggestions</h3>
+                    <p class="text-gray-600">
+                        We value your feedback! If you have suggestions for improving our services or products, please let us know. You can submit your feedback through the contact form or email us directly. Your insights help us enhance our offerings and better serve our customers.
+                    </p>
+                </div>
+                
+                <!-- Point 6 -->
+                <div class="contact-point">
+                    <h3>6. Partnership Opportunities</h3>
+                    <p class="text-gray-600">
+                        If you are interested in partnering with DrizzleRoot for business opportunities, please reach out to our business development team. We are always looking for innovative collaborations that align with our mission of promoting sustainable gardening practices.
+                    </p>
+                </div>
+                
+                <!-- Point 7 -->
+                <div class="contact-point">
+                    <h3>7. Media Inquiries</h3>
+                    <p class="text-gray-600">
+                        For media inquiries, including interviews, press releases, and promotional materials, please contact our marketing team. We are happy to provide information and resources to support your coverage of DrizzleRoot and our initiatives.
+                    </p>
+                </div>
+                
+                <!-- Point 8 -->
+                <div class="contact-point">
+                    <h3>8. Community Engagement</h3>
+                    <p class="text-gray-600">
+                        DrizzleRoot is committed to community engagement and education. If you are interested in hosting a workshop or event with us, please reach out. We love to share our knowledge and help others learn about sustainable gardening practices.
+                    </p>
+                </div>
+                
+                <!-- Point 9 -->
+                <div class="contact-point">
+                    <h3>9. Warranty Claims</h3>
+                    <p class="text-gray-600">
+                        If you need to file a warranty claim for a product purchased from DrizzleRoot, please contact our customer service team. Be sure to have your purchase details and any relevant documentation ready to expedite the process.
+                    </p>
+                </div>
+                
+                <!-- Point 10 -->
+                <div class="contact-point">
+                    <h3>10. Product Returns</h3>
+                    <p class="text-gray-600">
+                        For product returns, please refer to our return policy on the website. If you have questions or need assistance with a return, feel free to contact our customer service team for guidance on the process.
+                    </p>
+                </div>
+                
+                <!-- Point 11 -->
+                <div class="contact-point">
+                    <h3>11. Customer Testimonials</h3>
+                    <p class="text-gray-600">
+                        We love hearing from our customers! If you would like to share your experience with DrizzleRoot, please send us your testimonial. We may feature your feedback on our website or social media channels to inspire others.
+                    </p>
+                </div>
+                
+                <!-- Point 12 -->
+                <div class="contact-point">
+                    <h3>12. Social Media Engagement</h3>
+                    <p class="text-gray-600">
+                        Connect with us on social media to stay updated on our latest products, promotions, and gardening tips. We encourage you to engage with us by sharing your gardening projects and tagging us in your posts.
+                    </p>
+                </div>
+                
+                <!-- Point 13 -->
+                <div class="contact-point">
+                    <h3>13. Educational Resources</h3>
+                    <p class="text-gray-600">
+                        DrizzleRoot offers a variety of educational resources for gardeners of all levels. If you are looking for specific information or resources, please let us know, and we will do our best to assist you.
+                    </p>
+                </div>
+                
+                <!-- Point 14 -->
+                <div class="contact-point">
+                    <h3>14. Sustainability Initiatives</h3>
+                    <p class="text-gray-600">
+                        We are committed to sustainability and eco-friendly practices. If you have questions about our sustainability initiatives or would like to collaborate on a project, please reach out to us.
+                    </p>
+                </div>
+                
+                <!-- Point 15 -->
+                <div class="contact-point">
+                    <h3>15. Local Events and Workshops</h3>
+                    <p class="text-gray-600">
+                        DrizzleRoot frequently hosts local events and workshops to promote sustainable gardening. If you are interested in attending or partnering with us for an event, please contact us for more information.
+                    </p>
+                </div>
+                
+                <!-- Point 16 -->
+                <div class="contact-point">
+                    <h3>16. Gardening Tips and Advice</h3>
+                    <p class="text-gray-600">
+                        If you have specific gardening questions or need advice on your irrigation system, feel free to reach out. Our team of experts is here to help you achieve your gardening goals.
+                    </p>
+                </div>
+                
+                <!-- Point 17 -->
+                <div class="contact-point">
+                    <h3>17. Product Availability</h3>
+                    <p class="text-gray-600">
+                        For inquiries about product availability or restocking, please contact our customer service team. We can provide you with the latest information on our inventory and expected restock dates.
+                    </p>
+                </div>
+                
+                <!-- Point 18 -->
+                <div class="contact-point">
+                    <h3>18. Custom Solutions</h3>
+                    <p class="text-gray-600">
+                        If you have unique irrigation needs or require a custom solution, please reach out to us. Our team can work with you to design a system that meets your specific requirements.
+                    </p>
+                </div>
+                
+                <!-- Point 19 -->
+                <div class="contact-point">
+                    <h3>19. Affiliate Program</h3>
+                    <p class="text-gray-600">
+                        If you are interested in joining our affiliate program, please contact us for more information. We offer competitive commissions and support for our affiliates to promote our products.
+                    </p>
+                </div>
+                
+                <!-- Point 20 -->
+                <div class="contact-point">
+                    <h3>20. Newsletter Subscription</h3>
+                    <p class="text-gray-600">
+                        Stay informed about our latest news, products, and promotions by subscribing to our newsletter. You can sign up on our website or contact us to be added to our mailing list.
+                    </p>
+                </div>
+                
+                <!-- Point 21 -->
+                <div class="contact-point">
+                    <h3>21. Product Demonstrations</h3>
+                    <p class="text-gray-600">
+                        If you would like to schedule a product demonstration, please contact us. We can arrange a time for you to see our products in action and learn more about their features and benefits.
+                    </p>
+                </div>
+                
+                <!-- Point 22 -->
+                <div class="contact-point">
+                    <h3>22. Community Support</h3>
+                    <p class="text-gray-600">
+                        DrizzleRoot is dedicated to supporting our local community. If you are involved in community gardening initiatives or projects, please reach out to us to discuss potential partnerships or support.
+                    </p>
+                </div>
+                
+                <!-- Point 23 -->
+                <div class="contact-point">
+                    <h3>23. Gardening Workshops</h3>
+                    <p class="text-gray-600">
+                        We offer workshops on various gardening topics throughout the year. If you are interested in attending or would like to suggest a topic for a future workshop, please let us know.
+                    </p>
+                </div>
+                
+                <!-- Point 24 -->
+                <div class="contact-point">
+                    <h3>24. Customer Loyalty Program</h3>
+                    <p class="text-gray-600">
+                        Join our customer loyalty program to earn rewards for your purchases. If you have questions about the program or how to enroll, please contact our customer service team for assistance.
+                    </p>
+                </div>
+                
+                <!-- Point 25 -->
+                <div class="contact-point">
+                    <h3>25. Gardening Community Forum</h3>
+                    <p class="text-gray-600">
+                        Join our online gardening community forum to connect with other gardeners, share tips, and ask questions. If you would like to participate, please reach out for more information on how to join.
+                    </p>
+                </div>
+                
+                <!-- Point 26 -->
+                <div class="contact-point">
+                    <h3>26. Seasonal Promotions</h3>
+                    <p class="text-gray-600">
+                        Keep an eye out for our seasonal promotions and discounts. If you have questions about current offers, please contact us for details on how to take advantage of these savings.
+                    </p>
+                </div>
+                
+                <!-- Point 27 -->
+                <div class="contact-point">
+                    <h3>27. Gardening Resources</h3>
+                    <p class="text-gray-600">
+                        We provide a variety of gardening resources on our website, including articles, videos, and guides. If you are looking for specific information, please let us know, and we can direct you to the right resources.
+                    </p>
+                </div>
+                
+                <!-- Point 28 -->
+                <div class="contact-point">
+                    <h3>28. Product Reviews</h3>
+                    <p class="text-gray-600">
+                        We encourage our customers to leave reviews for our products. If you have feedback to share, please submit your review on our website or contact us to discuss your experience.
+                    </p>
+                </div>
+                
+                <!-- Point 29 -->
+                <div class="contact-point">
+                    <h3>29. Gardening Events Calendar</h3>
+                    <p class="text-gray-600">
+                        Check our website for an updated calendar of gardening events, workshops, and community activities. If you would like to add an event to our calendar, please reach out to us with the details.
+                    </p>
+                </div>
+                
+                <!-- Point 30 -->
+                <div class="contact-point">
+                    <h3>30. Customer Satisfaction Surveys</h3>
+                    <p class="text-gray-600">
+                        We periodically conduct customer satisfaction surveys to improve our services. If you receive a survey, we appreciate your feedback and encourage you to share your thoughts with us.
+                    </p>
+                </div>
+                
+                <!-- Point 31 -->
+                <div class="contact-point">
+                    <h3>31. Gardening Challenges</h3>
+                    <p class="text-gray-600">
+                        If you are facing specific challenges in your gardening journey, please reach out for personalized advice. Our team is here to help you overcome obstacles and achieve your gardening goals.
+                    </p>
+                </div>
+                
+                <!-- Point 32 -->
+                <div class="contact-point">
+                    <h3>32. Product Customization</h3>
+                    <p class="text-gray-600">
+                        If you are interested in customizing a product to better suit your needs, please contact us. We can discuss options for tailoring our products to fit your specific requirements.
+                    </p>
+                </div>
+                
+                <!-- Point 33 -->
+                <div class="contact-point">
+                    <h3>33. Gardening Tips Newsletter</h3>
+                    <p class="text-gray-600">
+                        Subscribe to our gardening tips newsletter for regular updates and advice. If you would like to receive this newsletter, please sign up on our website or contact us to be added to the list.
+                    </p>
+                </div>
+                
+                <!-- Point 34 -->
+                <div class="contact-point">
+                    <h3>34. Local Gardening Clubs</h3>
+                    <p class="text-gray-600">
+                        If you are part of a local gardening club and would like to collaborate with DrizzleRoot, please reach out. We are interested in supporting local gardening initiatives and events.
+                    </p>
+                </div>
+                
+                <!-- Point 35 -->
+                <div class="contact-point">
+                    <h3>35. Gardening Workshops for Schools</h3>
+                    <p class="text-gray-600">
+                        We offer workshops for schools to educate students about gardening and sustainability. If you are an educator interested in scheduling a workshop, please contact us for more information.
+                    </p>
+                </div>
+                
+                <!-- Point 36 -->
+                <div class="contact-point">
+                    <h3>36. Gardening Competitions</h3>
+                    <p class="text-gray-600">
+                        DrizzleRoot may host gardening competitions throughout the year. If you are interested in participating or would like to learn more, please reach out for details on upcoming events.
+                    </p>
+                </div>
+                
+                <!-- Point 37 -->
+                <div class="contact-point">
+                    <h3>37. Gardening Resources for Beginners</h3>
+                    <p class="text-gray-600">
+                        If you are new to gardening and looking for resources to get started, please contact us. We can provide you with beginner-friendly guides and tips to help you on your gardening journey.
+                    </p>
+                </div>
+                
+                <!-- Point 38 -->
+                <div class="contact-point">
+                    <h3>38. Gardening Workshops for Seniors</h3>
+                    <p class="text-gray-600">
+                        We offer specialized gardening workshops for seniors to promote engagement and wellness. If you are interested in scheduling a workshop, please reach out for more information.
+                    </p>
+                </div>
+                
+                <!-- Point 39 -->
+                <div class="contact-point">
+                    <h3>39. Gardening for Health and Wellness</h3>
+                    <p class="text-gray-600">
+                        Gardening has numerous health benefits. If you would like to learn more about how gardening can improve your well-being, please contact us for resources and information.
+                    </p>
+                </div>
+                
+                <!-- Point 40 -->
+                <div class="contact-point">
+                    <h3>40. Contact Us Anytime</h3>
+                    <p class="text-gray-600">
+                        We are here to assist you with any questions or concerns you may have. Please do not hesitate to reach out to us anytime. Your satisfaction is our priority, and we look forward to hearing from you!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1 -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="water-drop w-10 h-10 rounded-full bg-blue-100 bg-opacity-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-tint text-blue-300 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">
+                            Drizzle<span class="font-normal">Root</span>
+                        </h3>
+                    </div>
+                    <p class="text-sm mb-4">
+                        Precision micro-irrigation solutions for urban gardeners since 2015.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">System Design</a></li>
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">Installation</a></li>
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">Maintenance</a></li>
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">Consultation</a></li>
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">Smart Technology</a></li>
+                        <li><a href="index.html#services" class="text-sm hover:text-white transition">Water Audits</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#tips" class="text-sm hover:text-white transition">Gardening Tips</a></li>
+                        <li><a href="index.html" class="text-sm hover:text -white transition">Blog</a></li>
+                        <li><a href="index.html" class="text-sm hover:text-white transition">FAQ</a></li>
+                        <li><a href="privacy.html" class="text-sm hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-sm hover:text-white transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">690 E 14th St, New York, NY 10009</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">(866) 711-2243</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">info@drizzleroot.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">Mon-Fri: 9am-6pm EST</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <p class="text-sm">
+                            © 2023 DrizzleRoot, Inc. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <ul class="flex flex-wrap justify-end space-x-4 text-sm">
+                            <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                            <li><a href="terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                            <li><a href="#" class="hover:text-white transition">Accessibility</a></li>
+                            <li><a href="index.html#sitemap" class="hover:text-white transition">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-sm">
+                    <p class="mb-2">
+                        <strong>Disclaimer:</strong> The information contained on this website is for general information purposes only. While we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                    </p>
+                    <p>
+                        In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

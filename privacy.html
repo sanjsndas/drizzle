@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | DrizzleRoot - Micro-Irrigation Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #2C7BE5;
+            --secondary: #00D97E;
+            --accent: #00C9FF;
+            --dark: #12263F;
+            --light: #F5F9FC;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F9FBFD;
+            color: #364049;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+        
+        .water-drop {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .water-drop::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(44, 123, 229, 0.1) 0%, transparent 70%);
+            animation: ripple 8s infinite;
+            opacity: 0;
+            border-radius: 50%;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: scale(0.1);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(44, 123, 229, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(44, 123, 229, 0.4);
+        }
+        
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .footer-link:hover {
+            color: var(--secondary);
+        }
+        
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .privacy-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .privacy-point h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white">
+    <!-- Header -->
+    <header class="relative bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="water-drop w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <i class="fas fa-tint text-blue-500 text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500">
+                        Drizzle<span class="font-normal">Root</span>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                 <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0"aria-current="page">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Privacy Policy Hero -->
+    <section class="relative py-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Privacy Policy</h2>
+            <p class="max-w-3xl mx-auto text-blue-100">
+                Last updated: June 15, 2023 | Effective date: June 15, 2023
+            </p>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 content-section">
+            <div class="mb-12">
+                <p class="text-gray-600 mb-6">
+                    At DrizzleRoot ("we," "us," or "our"), we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <a href="https://www.drizzleroot.com" class="text-blue-500 hover:underline">www.drizzleroot.com</a>, including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the "Site").
+                </p>
+                <p class="text-gray-600">
+                    Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site. We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the "Last Updated" date of this Privacy Policy.
+                </p>
+            </div>
+            
+            <!-- Privacy Points -->
+            <div class="privacy-content">
+                <!-- Point 1 -->
+                <div class="privacy-point">
+                    <h3>1. Information We Collect</h3>
+                    <p class="text-gray-600">
+                        We collect information about you in a variety of ways. The information we may collect on the Site includes: personal data such as your name, email address, phone number, and mailing address that you voluntarily give to us when you register with the Site or when you choose to participate in various activities related to the Site, such as online chat and message boards. You are under no obligation to provide us with personal information of any kind, however your refusal to do so may prevent you from using certain features of the Site.
+                    </p>
+                </div>
+                
+                <!-- Point 2 -->
+                <div class="privacy-point">
+                    <h3>2. How We Use Your Information</h3>
+                    <p class="text-gray-600">
+                        Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Site to: create and manage your account; process your transactions and send you related information; respond to your customer service requests and address your inquiries; send you newsletters, special offers, and general information about other goods, services, and events which we offer; monitor and analyze usage and trends to improve your experience with the Site; prevent fraudulent transactions, monitor against theft, and protect against criminal activity; and to comply with legal obligations and enforce our terms and conditions.
+                    </p>
+                </div>
+                
+                <!-- Point 3 -->
+                <div class="privacy-point">
+                    <h3>3. Disclosure of Your Information</h3>
+                    <p class="text-gray-600">
+                        We may share information we have collected about you in certain situations. Your information may be disclosed as follows: to our subsidiaries and affiliates; to contractors, service providers, and other third parties we use to support our business; to fulfill the purpose for which you provide it; for any other purpose disclosed by us when you provide the information; with your consent; to comply with any court order, law, or legal process, including to respond to any government or regulatory request; to enforce or apply our terms of use and other agreements; and if we believe disclosure is necessary or appropriate to protect the rights, property, or safety of DrizzleRoot, our customers, or others.
+                    </p>
+                </div>
+                
+                <!-- Point 4 -->
+                <div class="privacy-point">
+                    <h3>4. Tracking Technologies</h3>
+                    <p class="text-gray-600">
+                        We may use cookies, web beacons, tracking pixels, and other tracking technologies on the Site to help customize the Site and improve your experience. When you access the Site, your personal information is not collected through the use of tracking technology. Most browsers are set to accept cookies by default. You can remove or reject cookies, but be aware that such action could affect the availability and functionality of the Site. We may also use third-party software to serve ads on the Site, implement email marketing campaigns, and manage other interactive marketing initiatives.
+                    </p>
+                </div>
+                
+                <!-- Point 5 -->
+                <div class="privacy-point">
+                    <h3>5. Third-Party Websites</h3>
+                    <p class="text-gray-600">
+                        The Site may contain links to third-party websites and applications of interest, including advertisements and external services, that are not affiliated with us. Once you have used these links to leave the Site, any information you provide to these third parties is not covered by this Privacy Policy, and we cannot guarantee the safety and privacy of your information. Before visiting and providing any information to any third-party websites, you should inform yourself of the privacy policies and practices (if any) of the third party responsible for that website, and should take those steps necessary to, in your discretion, protect the privacy of your information.
+                    </p>
+                </div>
+                
+                <!-- Point 6 -->
+                <div class="privacy-point">
+                    <h3>6. Security of Your Information</h3>
+                    <p class="text-gray-600">
+                        We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse. Any information disclosed online is vulnerable to interception and misuse by unauthorized parties. Therefore, we cannot guarantee complete security if you provide personal information.
+                    </p>
+                </div>
+                
+                <!-- Point 7 -->
+                <div class="privacy-point">
+                    <h3>7. Policy for Children</h3>
+                    <p class="text-gray-600">
+                        We do not knowingly solicit information from or market to children under the age of 13. If you become aware of any data we have collected from children under age 13, please contact us immediately at privacy@drizzleroot.com. If we learn that personal information from users less than 13 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records.
+                    </p>
+                </div>
+                
+                <!-- Point 8 -->
+                <div class="privacy-point">
+                    <h3>8. Your Rights and Choices</h3>
+                    <p class="text-gray-600">
+                        Depending on your location, you may have certain rights regarding your personal information. These may include the right to: access and obtain a copy of your personal information; request rectification or erasure; restrict the processing of your personal information; data portability; object to processing; and lodge a complaint with your local data protection authority. If you would at any time like to review or change the information in your account or terminate your account, you can contact us using the contact information provided below.
+                    </p>
+                </div>
+                
+                <!-- Point 9 -->
+                <div class="privacy-point">
+                    <h3>9. California Privacy Rights</h3>
+                    <p class="text-gray-600">
+                        California Civil Code Section 1798.83 permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
+                    </p>
+                </div>
+                
+                <!-- Point 10 -->
+                <div class="privacy-point">
+                    <h3>10. GDPR Compliance</h3>
+                    <p class="text-gray-600">
+                        For users in the European Economic Area (EEA), we comply with the General Data Protection Regulation (GDPR). Under GDPR, you have the right to access, rectify, port, and erase your data. You also have the right to object to and restrict certain processing of your data. This includes the right to object to our processing of your data for direct marketing, which you can exercise by using the "unsubscribe" link in such communications. Where we process your data based on legitimate interests, you can contact us to object to this processing. If we process your data based on your consent, you can withdraw your consent at any time.
+                    </p>
+                </div>
+                
+                <!-- Point 11 -->
+                <div class="privacy-point">
+                    <h3>11. Data Retention</h3>
+                    <p class="text-gray-600">
+                        We will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies. We will also retain usage data for internal analysis purposes. Usage data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Site, or we are legally obligated to retain this data for longer time periods.
+                    </p>
+                </div>
+                
+                <!-- Point 12 -->
+                <div class="privacy-point">
+                    <h3>12. International Data Transfers</h3>
+                    <p class="text-gray-600">
+                        Your information, including personal data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction. If you are located outside United States and choose to provide information to us, please note that we transfer the data, including personal data, to United States and process it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer. We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy.
+                    </p>
+                </div>
+                
+                <!-- Point 13 -->
+                <div class="privacy-point">
+                    <h3>13. Business Transfers</h3>
+                    <p class="text-gray-600">
+                        In the event that DrizzleRoot is involved in a merger, acquisition, asset sale, financing, joint venture, bankruptcy, reorganization, receivership, purchase or sale of assets, or transition of service to another provider, your information may be sold or transferred as part of such a transaction as permitted by law and/or contract. We cannot control how such entities may use or disclose such information. We will endeavor to direct the transferee to use personal information in a manner that is consistent with the Privacy Policy in effect at the time such personal information was collected.
+                    </p>
+                </div>
+                
+                <!-- Point 14 -->
+                <div class="privacy-point">
+                    <h3>14. Changes to This Privacy Policy</h3>
+                    <p class="text-gray-600">
+                        We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page. Your continued use of our Site after we make changes is deemed to be acceptance of those changes, so please check the policy periodically for updates.
+                    </p>
+                </div>
+                
+                <!-- Point 15 -->
+                <div class="privacy-point">
+                    <h3>15. Contact Us</h3>
+                    <p class="text-gray-600">
+                        If you have questions or comments about this Privacy Policy, please contact us at:
+                    </p>
+                    <p class="text-gray-600 mt-2">
+                        DrizzleRoot Inc.<br>
+                        Attn: Privacy Officer<br>
+                        690 E 14th St, New York, NY 10009<br>
+                        Email: privacy@drizzleroot.com<br>
+                        Phone: (866) 711-2243
+                    </p>
+                </div>
+                
+                <!-- Point 16 -->
+                <div class="privacy-point">
+                    <h3>16. Information We Collect Automatically</h3>
+                    <p class="text-gray-600">
+                        When you visit, use, and navigate the Site, we may collect certain information automatically, including your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Site, and other technical information. This information is primarily needed to maintain the security and operation of our Site, and for our internal analytics and reporting purposes. The information we collect automatically includes log and usage data, which are service-related, diagnostic, and performance information our servers automatically collect when you access or use our Site.
+                    </p>
+                </div>
+                
+                <!-- Point 17 -->
+                <div class="privacy-point">
+                    <h3>17. Cookies and Similar Technologies</h3>
+                    <p class="text-gray-600">
+                        We use cookies and similar tracking technologies to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Policy. Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners to make their websites work more efficiently, as well as to provide reporting information. We use first-party and third-party cookies for several purposes including to operate and administer our Site, gather analytics data, and for advertising purposes.
+                    </p>
+                </div>
+                
+                <!-- Point 18 -->
+                <div class="privacy-point">
+                    <h3>18. Social Media Features</h3>
+                    <p class="text-gray-600">
+                        Our Site may include social media features such as the Facebook Like button, Twitter tweet button, and other widgets or interactive mini-programs that run on our Site. These features may collect your IP address, which page you are visiting on our Site, and may set a cookie to enable the feature to function properly. Social media features and widgets are either hosted by a third party or hosted directly on our Site. Your interactions with these features are governed by the privacy policy of the company providing it.
+                    </p>
+                </div>
+                
+                <!-- Point 19 -->
+                <div class="privacy-point">
+                    <h3>19. Analytics Services</h3>
+                    <p class="text-gray-600">
+                        We may use third-party service providers to monitor and analyze the use of our Site. Currently, we use Google Analytics, a web analytics service provided by Google, Inc. Google Analytics uses cookies to help us analyze how users use the Site. The information generated by the cookie about your use of the Site (including your IP address) will be transmitted to and stored by Google on servers in the United States. Google will use this information for the purpose of evaluating your use of the Site, compiling reports on website activity for website operators, and providing other services relating to website activity and internet usage.
+                    </p>
+                </div>
+                
+                <!-- Point 20 -->
+                <div class="privacy-point">
+                    <h3>20. Advertising Partners</h3>
+                    <p class="text-gray-600">
+                        We may use third-party advertising companies to serve ads when you visit the Site. These companies may use information about your visits to this and other websites in order to provide advertisements about goods and services of interest to you. These advertising partners may set and access their own cookies, pixel tags, and similar technologies on our Site to collect information relating to your online activities across different websites and over time, and they may use that information to provide you with interest-based (behavioral) advertising or other targeted content.
+                    </p>
+                </div>
+                
+                <!-- Point 21 -->
+                <div class="privacy-point">
+                    <h3>21. Do Not Track Signals</h3>
+                    <p class="text-gray-600">
+                        Most web browsers and some mobile operating systems include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Policy.
+                    </p>
+                </div>
+                
+                <!-- Point 22 -->
+                <div class="privacy-point">
+                    <h3>22. Email Communications</h3>
+                    <p class="text-gray-600">
+                        If you no longer wish to receive correspondence, emails, or other communications from us, you may opt-out by clicking on the unsubscribe link in the emails that we send or by contacting us using the contact information provided below. If you no longer wish to receive correspondence, emails, or other communications from third parties, you are responsible for contacting the third party directly. Note that opting out of marketing communications does not opt you out of receiving important business communications related to your current relationship with us, such as communications about your orders or service announcements.
+                    </p>
+                </div>
+                
+                <!-- Point 23 -->
+                <div class="privacy-point">
+                    <h3>23. Testimonials</h3>
+                    <p class="text-gray-600">
+                        We display personal testimonials of satisfied customers on our Site in addition to other endorsements. With your consent, we may post your testimonial along with your name. If you wish to update or delete your testimonial, you can contact us at testimonials@drizzleroot.com. We also display customer reviews of products that may have been collected as part of a product review program. These reviews may help you to evaluate products and make purchasing decisions. By submitting a product review, you agree that we may publish your review together with your first name and last initial, and that we may use your review in our marketing materials.
+                    </p>
+                </div>
+                
+                <!-- Point 24 -->
+                <div class="privacy-point">
+                    <h3>24. Public Forums</h3>
+                    <p class="text-gray-600">
+                        Our Site may offer publicly accessible blogs or community forums. You should be aware that any information you provide in these areas may be read, collected, and used by others who access them. To request removal of your personal information from our blog or community forum, contact us at privacy@drizzleroot.com. In some cases, we may not be able to remove your personal information, in which case we will let you know if we are unable to do so and why. We urge you to exercise caution when deciding to disclose any personal information or other data in public forums.
+                    </p>
+                </div>
+                
+                <!-- Point 25 -->
+                <div class="privacy-point">
+                    <h3>25. Surveys & Contests</h3>
+                    <p class="text-gray-600">
+                        From time-to-time, our Site may request information via surveys or contests. Participation in these surveys or contests is completely voluntary and you may choose whether or not to participate and therefore disclose this information. Information requested may include contact information (such as name and shipping address), and demographic information (such as zip code, age level). Contact information will be used to notify the winners and award prizes. Survey information will be used for purposes of monitoring or improving the use and satisfaction of this Site and our products and services.
+                    </p>
+                </div>
+                
+                <!-- Point 26 -->
+                <div class="privacy-point">
+                    <h3>26. User-Generated Content</h3>
+                    <p class="text-gray-600">
+                        You may be able to submit content to the Site, including your comments, photos, videos, and other materials. Any personal information contained in your user-generated content can be read, collected, or used by other users of the Site, and could be used to send you unsolicited messages. We are not responsible for the personal information you choose to include in your user-generated content. User-generated content may be retained by us indefinitely, even after your account is terminated. You should exercise caution before posting any personal information that may be identified in your user-generated content.
+                    </p>
+                </div>
+                
+                <!-- Point 27 -->
+                <div class="privacy-point">
+                    <h3>27. Mobile Applications</h3>
+                    <p class="text-gray-600">
+                        When you use our mobile applications, we may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile device's unique device ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browsers you use, and information about the way you use the application. We may also use GPS technology (or other similar technology) to determine your current location. If you do not want us to have your location information, you should turn off the location services for the mobile application located in your account settings or in your mobile phone settings.
+                    </p>
+                </div>
+                
+                <!-- Point 28 -->
+                <div class="privacy-point">
+                    <h3>28. Push Notifications</h3>
+                    <p class="text-gray-600">
+                        We may send push notifications or alerts to your mobile device to provide service-related messages, account notifications, promotional communications, and other updates. You can deactivate these notifications at any time by changing the notification settings on your mobile device. Please note that if you disable push notifications, you may miss important account notifications and updates. The frequency of push notifications will vary depending on your account settings and how you use our services. We may personalize the content of push notifications based on information we have collected about you.
+                    </p>
+                </div>
+                
+                <!-- Point 29 -->
+                <div class="privacy-point">
+                    <h3>29. SMS/Text Messaging</h3>
+                    <p class="text-gray-600">
+                        If you provide us with your mobile phone number, we may send you SMS or text messages for account verification, security codes, appointment reminders, order status updates, promotions, and other service-related notifications. Message frequency varies. Standard message and data rates may apply. You can opt-out of receiving SMS messages from us by replying "STOP" to any message we send you. After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.
+                    </p>
+                </div>
+                
+                <!-- Point 30 -->
+                <div class="privacy-point">
+                    <h3>30. Third-Party Logins</h3>
+                    <p class="text-gray-600">
+                        Our Site may allow you to register and log in using sign-in services such as Google, Facebook, or Apple. These services will authenticate your identity and provide you the option to share certain personal information with us such as your name and email address to pre-populate our sign-up form. Services like these may give you the option to post information about your activities on our Site to your profile page to share with others within your network. Your interactions with these features are governed by the privacy policy of the company providing it.
+                    </p>
+                </div>
+                
+                <!-- Point 31 -->
+                <div class="privacy-point">
+                    <h3>31. Affiliate Programs</h3>
+                    <p class="text-gray-600">
+                        We may participate in affiliate marketing and may allow affiliate links to be encoded on some of our pages. This means that we may earn a commission when you click on or make purchases via affiliate links. Affiliate programs may use cookies to track visits for the purposes of assigning commission on these sales. We are not responsible for the privacy practices of our affiliates and we encourage you to read their privacy policies. The affiliate marketing services we use may collect information about your visits to our Site and other websites in order to provide advertisements about goods and services of interest to you.
+                    </p>
+                </div>
+                
+                <!-- Point 32 -->
+                <div class="privacy-point">
+                    <h3>32. Data Protection Officer</h3>
+                    <p class="text-gray-600">
+                        DrizzleRoot has appointed a Data Protection Officer (DPO) who is responsible for overseeing questions in relation to this Privacy Policy. If you have any questions about this Privacy Policy, including any requests to exercise your legal rights, please contact the DPO using the details set out below. Our DPO can be contacted at dpo@drizzleroot.com or by mail at: DrizzleRoot Inc., Attn: Data Protection Officer, 690 E 14th St, New York, NY 10009. You have the right to make a complaint at any time to the relevant supervisory authority for data protection issues.
+                    </p>
+                </div>
+                
+                <!-- Point 33 -->
+                <div class="privacy-point">
+                    <h3>33. Data Processing Agreements</h3>
+                    <p class="text-gray-600">
+                        We enter into data processing agreements (DPAs) with all third-party service providers that process personal data on our behalf. These agreements help ensure that data processing complies with applicable data protection laws and that your personal information remains protected. Our DPAs outline the purpose, nature, and duration of the processing, the types of personal data and categories of data subjects, and the obligations and rights of the controller. We conduct due diligence on all third-party processors and regularly monitor their compliance with our DPAs and applicable data protection laws.
+                    </p>
+                </div>
+                
+                <!-- Point 34 -->
+                <div class="privacy-point">
+                    <h3>34. Data Breach Notification</h3>
+                    <p class="text-gray-600">
+                        In the event that personal data is compromised as a result of a breach of security, we will promptly notify those individuals whose personal information has been compromised, in accordance with the notification procedures set forth in this Privacy Policy, or as otherwise required by applicable law. Our breach notification procedures include internal reporting processes, investigation procedures, and mechanisms for assessing whether breach notification is required under applicable laws. We will make all legally required disclosures to users and authorities about any data breach without undue delay and, where feasible, within 72 hours after becoming aware that a breach has occurred.
+                    </p>
+                </div>
+                
+                <!-- Point 35 -->
+                <div class="privacy-point">
+                    <h3>35. Data Minimization</h3>
+                    <p class="text-gray-600">
+                        We adhere to the principle of data minimization, collecting only the personal information that is necessary for the purposes for which it is being processed. We periodically review the personal data we hold and delete or anonymize any data that is no longer necessary for the purposes for which it was collected. Our data collection forms clearly indicate which fields are required for service delivery and which are optional. We implement technical and organizational measures to ensure that, by default, only personal data which are necessary for each specific purpose of the processing are processed.
+                    </p>
+                </div>
+                
+                <!-- Point 36 -->
+                <div class="privacy-point">
+                    <h3>36. Data Accuracy</h3>
+                    <p class="text-gray-600">
+                        We take reasonable steps to ensure that personal data we collect is accurate, complete, current, and reliable for its intended use. We provide you with the ability to access and update certain personal information we hold about you through your account settings. If you become aware that personal information we maintain about you is inaccurate, incomplete, or misleading, you may request that we correct or amend the information by contacting us using the contact information provided below. We may need to verify your identity before implementing your request.
+                    </p>
+                </div>
+                
+                <!-- Point 37 -->
+                <div class="privacy-point">
+                    <h3>37. Automated Decision Making</h3>
+                    <p class="text-gray-600">
+                        We may use automated decision-making processes in limited circumstances, such as for fraud detection and prevention. When we make solely automated decisions that significantly affect you, we will provide meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for you. You have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning you or similarly significantly affects you, unless such processing is necessary for entering into or performance of a contract, is authorized by law, or is based on your explicit consent.
+                    </p>
+                </div>
+                
+                <!-- Point 38 -->
+                <div class="privacy-point">
+                    <h3>38. Special Categories of Data</h3>
+                    <p class="text-gray-600">
+                        We do not intentionally collect special categories of personal data (such as details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health, and genetic and biometric data) unless you voluntarily provide this information to us or unless this information is required for a specific service we provide. If we process special categories of personal data, we will do so in compliance with applicable laws and, where required, with your explicit consent. We implement additional safeguards when processing special categories of data.
+                    </p>
+                </div>
+                
+                <!-- Point 39 -->
+                <div class="privacy-point">
+                    <h3>39. Data Subject Rights</h3>
+                    <p class="text-gray-600">
+                        Depending on your jurisdiction, you may have certain rights regarding your personal information, which may include the right to: request access to your personal data; request correction of inaccurate personal data; request erasure of your personal data; object to processing of your personal data; request restriction of processing your personal data; request transfer of your personal data; withdraw consent where we rely on consent to process your personal data; and lodge a complaint with a supervisory authority. To exercise any of these rights, please contact us using the contact information provided below.
+                    </p>
+                </div>
+                
+                <!-- Point 40 -->
+                <div class="privacy-point">
+                    <h3>40. Governing Law</h3>
+                    <p class="text-gray-600">
+                        This Privacy Policy is governed by and construed in accordance with the laws of the State of New York, United States, without regard to its conflict of law principles. Any disputes arising out of or related to this Privacy Policy or your use of the Site will be subject to the exclusive jurisdiction of the state and federal courts located in New York County, New York. If any provision of this Privacy Policy is held to be invalid or unenforceable, that provision will be construed in a manner consistent with applicable law to reflect the original intentions of the parties, and the remaining provisions will remain in full force and effect.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1 -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="water-drop w-10 h-10 rounded-full bg-blue-100 bg-opacity-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-tint text-blue-300 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">
+                            Drizzle<span class="font-normal">Root</span>
+                        </h3>
+                    </div>
+                    <p class="text-sm mb-4">
+                        Precision micro-irrigation solutions for urban gardeners since 2015.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-white transition">System Design</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Installation</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Maintenance</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Consultation</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Smart Technology</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Water Audits</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-white transition">Gardening Blog</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Water Savings Calculator</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Plant Guides</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">DIY Tips</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Video Tutorials</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">690 E 14th St, New York, NY 10009</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">(866) 711-2243</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">info@drizzleroot.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-2 text-blue-300"></i>
+                            <span class="text-sm">Mon-Fri: 9am-6pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <p class="text-sm">
+                            © 2023 DrizzleRoot, Inc. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <ul class="flex flex-wrap justify-end space-x-4 text-sm">
+                            <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                            <li><a href="#" class="hover:text-white transition">Accessibility</a></li>
+                            <li><a href="#" class="hover:text-white transition">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-sm">
+                    <p class="mb-2">
+                        <strong>Disclaimer:</strong> The information contained on this website is for general information purposes only. While we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                    </p>
+                    <p>
+                        In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
